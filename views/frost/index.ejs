@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+<h1>Things to implement</h1>
+
+<ul>
+    <li>Kick Perry's ass into thinking about what's needed</li>
+    <li>Images</li>
+    <li>Page layout - possibly using excalidraw</li>
+    <li>Decision on how much content needed on front page and sub-pages</li>
+
+</ul>
+
+    <% page.forEach(function(t) { %>
+        <li>
+            <a href="/frost/<%= t.id %>">
+                <%= t.page %>
+            </a>
+        </li>
+        <% }) %>
+            <%- include("../partials/footer") %>
